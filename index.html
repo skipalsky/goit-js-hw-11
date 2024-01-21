@@ -2,39 +2,33 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/goit-js-hw-11/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="/goit-js-hw-11/assets/gallery-e251de88.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>goit-js-hw-11</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap"
-      rel="stylesheet"
-    />
+    <title>Gallery</title>
     
-    <script type="module" crossorigin src="/goit-js-hw-11/commonHelpers.js"></script>
-    <link rel="modulepreload" crossorigin href="/goit-js-hw-11/assets/vendor-46aac873.js">
-    <link rel="stylesheet" href="/goit-js-hw-11/assets/vendor-eb6030bc.css">
-    <link rel="stylesheet" href="/goit-js-hw-11/assets/index-3c4038da.css">
+    <script type="module" crossorigin src="/goit-js-hw-11/commonHelpers2.js"></script>
+    <link rel="modulepreload" crossorigin href="/goit-js-hw-11/assets/vendor-18365dff.js">
+    <link rel="stylesheet" href="/goit-js-hw-11/assets/index-eaf54c44.css">
   </head>
   <body>
-    <!-- Loads gallery.html file -->
-    <form class="form" autocomplete="off">
-  <label for="searchTerm">
+    <div class="container">
+  <form class="gallery-form">
     <input
-      class="searchTerm"
-      type="search"
-      name="searchTerm"
-      id="searchTerm"
+      class="search-input"
+      type="text"
+      name="search"
       placeholder="Search images..."
+      autocomplete="off"
     />
-  </label>
-  <button type="submit" class="search-btn">Search</button>
-</form>
+    <button class="search-btn" type="submit">Search</button>
+  </form>
 
-<span class="loader"></span>
-<div class="gallery"></div>
+  <span class="loader"></span>
 
+  <div class="gallery-container">
+    <ul class="gallery"></ul>
+  </div>
+</div>
 
     
   </body>
